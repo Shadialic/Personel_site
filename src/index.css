@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+    --clr-primary: white;
+    --clr-fade: #B1B1B1;
+    --clr-bg: #02001c;
+    --clr-bg-two: #02001c;
+    --fs-xl: clamp(3.5rem, 3vw, 12rem);
+    --fs-heading: 3.2rem;
+    --fs-title: 1.7rem;
+    --fs-pre-title: 1rem;
+    --fs-sub-title: 0.8rem;
+    --fs-body: 1.3rem;
+    --fs-body-two: 1rem;
+    --fs-heading-mobile: 1.5rem;
+    --fs-title-mobile: 1.2rem;
+    --fs-subtitle-mobile: 1rem;
+    --fs-body-mobile: 0.8rem;
+    --gradient-shadow: linear-gradient(150deg, #ff5733, #ff33b5, #338cff);
+    --gradient-shadow-two: linear-gradient(179deg, #ff5733, #ff33b5, #338cff);
+}
+
+#root{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    padding-top: 4.8rem;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 880px){
+    .container{
+        width: 100%;
+        padding: 0 1.6rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    background: var(--clr-bg);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--clr-bg);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--clr-bg-two);
+    border-radius: 2px;
+}

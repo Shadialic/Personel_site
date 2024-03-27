@@ -1,0 +1,167 @@
+.project {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.project__image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.project__image_shadow {
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, var(--clr-bg-two));
+    height: 0;
+    display: block;
+    transition: height 350ms;
+}
+
+.project__filler {
+    width: 100%;
+    height: 150px;
+    background-color: var(--clr-bg-two);
+}
+
+.project__image {
+    width: 100%;
+    height: 0;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: height 350ms;
+}
+
+.project__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.project__header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__titles {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.project__title {
+    font-size: var(--fs-title);
+    font-weight: 700;
+    color: var(--clr-primary)
+}
+
+.project__subtitle {
+    font-size: var(--fs-body);
+    color: var(--clr-fade);
+    font-weight: 700;
+}
+
+.project__links a svg {
+    fill: var(--clr-fade);
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+    cursor: pointer;
+}
+
+.project__links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project__description {
+    display: none;
+}
+
+@media screen and (min-width: 880px) {
+    .project:hover .project__description {
+        display: block;
+        font-size: var(--fs-body);
+        color: var(--clr-fade);
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    .project__filler {
+        height: 150px;
+    }
+
+    .project:hover .project__subtitle {
+        display: none;
+    }
+
+    .project:hover .project__header {
+        justify-content: start;
+        gap: 1rem;
+    }
+
+
+    .project:hover .project__content {
+        height: auto;
+        bottom: 30px;
+    }
+
+
+    .project:hover .project__image_shadow, .project:hover .project__image {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .project__image, .project__image_shadow {
+        height: 150px;
+    }
+
+    .project__title {
+        font-size: var(--fs-title-mobile);
+    }
+
+    .project__subtitle {
+        font-size: var(--fs-body-mobile);
+    }
+
+    .project__filler {
+        height: 100px;
+    }
+
+    .project__header {
+        flex-direction: column;
+        justify-content: start;
+        gap: .7rem;
+    }
+
+    .project__titles {
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    .project__content {
+        height: auto;
+        bottom: 15px;
+    }
+
+    .project__links a svg {
+        height: 1.2rem !important;
+        width: 1.2rem !important;
+    }
+}

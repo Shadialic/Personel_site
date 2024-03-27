@@ -1,0 +1,128 @@
+.skills__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__heading {
+    font-size: var(--fs-title);
+    font-weight: 700;
+    margin: 1em 0 0.4rem 0;
+    color: var(--clr-primary);
+}
+
+.skills__subheading {
+    font-size: var(--fs-body);
+    font-weight: 700;
+    margin: 0 0 3.6rem 0;
+    color: var(--clr-fade);
+    line-height: 220%;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.skills__group {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.skills__item {
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.skills__item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 880px) {
+    .slideFirst {
+        animation-name: slide1800;
+    }
+
+    .slideSecond {
+        animation-name: slide1380;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .skills__heading {
+        font-size: var(--fs-title-mobile);
+        text-align: center;
+    }
+
+    .skills {
+        margin-top: 2rem;
+    }
+
+    .skills__subheading {
+        font-size: var(--fs-body-mobile);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .skills svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .skills__list {
+        gap: 2rem;
+    }
+
+    .slideFirst {
+        animation-name: slide1125;
+    }
+
+    .slideSecond {
+        animation-name: slide866;
+    }
+}
+
+@keyframes slide1380 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1385px);
+    }
+}
+
+@keyframes slide1800 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1800px);
+    }
+}
+
+@keyframes slide866{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-866px);
+    }
+}
+
+@keyframes slide1125 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1125px);
+    }
+}
