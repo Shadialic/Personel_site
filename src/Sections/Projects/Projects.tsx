@@ -3,6 +3,8 @@ import Edutap from '../../assets/images/Edu-tap.png'
 import ProjectTwoImage from '../../assets/images/DarkFantacy.png';
 import malefashion from '../../assets/images/malefashion.png'
 import ProjectThreeImage from '../../assets/images/NetFlix.png';
+import passwordGen from '../../assets/images/password.png';
+
 import TalkWaveAI from '../../assets/images/Screenshot (82).png'
 import {useMemo} from "react";
 import {Project as ProjectType} from "../../Types/Project.ts";
@@ -25,7 +27,7 @@ export const Projects= () => {
             subtitle: 'E-Commerce',
             description: " In this Project Used HTML,CSS,Ajax, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
             github: 'https://github.com/Shadialic/MaleFashion',
-            website: 'https://www.malefashion.fun/',
+            website: 'https://www.shop.malefashion.fun/',
             image: malefashion,
             techStack: ['EJS', 'Node', 'MongoDb', 'Express','Nginx','CSS']
         },
@@ -37,6 +39,15 @@ export const Projects= () => {
             website: 'https://talk-wave-ai-nextjs.vercel.app',
             image: TalkWaveAI,
             techStack: ['React', 'Nextjs','NextAuth', 'MongoDb','Tailwind CSS']
+        },
+        {
+            title: 'Secure-Gen',
+            subtitle: 'Password-Generator',
+            description: "Create strong and secure passwords to keep your account safe online",
+            github: 'https://github.com/Shadialic/Password_Generator',
+            website: 'https://password-generator-cvfv.vercel.app/',
+            image: passwordGen,
+            techStack: ['React ', 'Node',"Tailwind CSS"]
         },
         {
             title: 'DARK-FANTASY',
