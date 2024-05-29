@@ -27,7 +27,7 @@ export const Projects= () => {
             subtitle: 'E-Commerce',
             description: " In this Project Used HTML,CSS,Ajax, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
             github: 'https://github.com/Shadialic/MaleFashion',
-            website: 'https://www.shop.malefashion.fun/',
+            website: 'https://shop.malefashion.fun/',
             image: malefashion,
             techStack: ['EJS', 'Node', 'MongoDb', 'Express','Nginx','CSS']
         },
