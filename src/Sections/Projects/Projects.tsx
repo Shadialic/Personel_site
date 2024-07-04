@@ -4,8 +4,8 @@ import ProjectTwoImage from '../../assets/images/DarkFantacy.png';
 import malefashion from '../../assets/images/malefashion.png'
 import ProjectThreeImage from '../../assets/images/NetFlix.png';
 import passwordGen from '../../assets/images/password.png';
-
-import TalkWaveAI from '../../assets/images/Screenshot (82).png'
+import connections from '../../assets/images/connections.png';
+import TalkWaveAI from '../../assets/images/Screenshot (82).png';
 import {useMemo} from "react";
 import {Project as ProjectType} from "../../Types/Project.ts";
 import {Project} from  "../";
@@ -15,19 +15,27 @@ export const Projects= () => {
         {
             title: 'Edu-tap',
             subtitle: 'E-learning Platform',
-            description: " In this Project Used React js,Node js,Express,Tailwind CSS,Redux, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
-
+            description: " In this Project Used React js,Node js,Express,MongoDb,Tailwind CSS,Redux, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
             github: 'https://github.com/Shadialic/Edutap_frontend',
-            website: 'https://www.malefashion.fun/',
+            website: 'https://edutap-frontend.vercel.app/',
             image: Edutap,
-            techStack: ['React', 'Node', 'MongoDb', 'Express','Redux' ,'Nginx','Tailwind CSS']
+            techStack: ['React Js', 'Node Js', 'MongoDb', 'Express','Redux',"Socket io",'Nginx','Tailwind CSS',"AWS"]
+        },
+        {
+            title: 'Connections',
+            subtitle: 'Real-time Chat Apllication',
+            description: " In this Project Used React js,Node js,Express,PostgreSQL,Meterial ui,Tailwind CSS,Context, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
+            github: 'https://github.com/Shadialic/Connection',
+            website: 'https://edutap-frontend.vercel.app/',
+            image: Edutap,
+            techStack: ['React Js', 'Node Js', 'PostgreSQL', 'Express',"Socket io","Context",'Tailwind CSS']
         },
         {
             title: 'Male-fashion',
             subtitle: 'E-Commerce',
             description: " In this Project Used HTML,CSS,Ajax, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
             github: 'https://github.com/Shadialic/MaleFashion',
-            website: 'https://shop.malefashion.fun/',
+            website: 'https://malefashion-lq16.onrender.com/',
             image: malefashion,
             techStack: ['EJS', 'Node', 'MongoDb', 'Express','Nginx','CSS']
         },
