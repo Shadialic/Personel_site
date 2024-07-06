@@ -15,7 +15,7 @@ export const Projects= () => {
         {
             title: 'Edu-tap',
             subtitle: 'E-learning Platform',
-            description: " In this Project Used React js,Node js,Express,MongoDb,Tailwind CSS,Redux, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
+            description: " Edu-tap is an innovative e-learning platform designed to offer a seamless and engaging educational experience. Built using a comprehensive tech stack that includes React.js, Node.js, Express, MongoDB, Tailwind CSS, Redux, Socket.IO, Nginx, and AWS, Edu-tap provides a user-friendly interface tailored for students, tutors, and administrators. Students benefit from interactive learning tools, tutors have access to teaching resources and analytics, while administrators manage courses, users, and platform settings. Whether you're engaging as a learner, educator, or administrator, Edu-tap ensures efficient and interactive learning with a modern, intuitive UI.",
             github: 'https://github.com/Shadialic/Edutap_frontend',
             website: 'https://edutap-frontend.vercel.app/',
             image: Edutap,
@@ -24,11 +24,11 @@ export const Projects= () => {
         {
             title: 'Connections',
             subtitle: 'Real-time Chat Apllication',
-            description: " In this Project Used React js,Node js,Express,PostgreSQL,Meterial ui,Tailwind CSS,Context, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
+            description: " Connections is a cutting-edge real-time chat application designed to provide a seamless and engaging user experience. Built using a robust tech stack that includes React.js, Node.js, Express, PostgreSQL, Material UI, Tailwind CSS, Context API, and Socket.IO, Connections offers a user-friendly interface with a variety of features to enhance your online communication. Whether you're chatting with friends or collaborating with colleagues, Connections ensures smooth, instant messaging with an intuitive and visually appealing UI.",
             github: 'https://github.com/Shadialic/Connection',
             website: 'https://connections-chat.vercel.app/',
             image: connections,
-            techStack: ['React Js', 'Node Js', 'PostgreSQL', 'Express',"Socket io","Context",'Tailwind CSS']
+            techStack: ['React Js', 'Node Js', 'PostgreSQL', 'Express',"Socket io","Context",'Tailwind CSS',"Metriel Ui"]
         },
         {
             title: 'Male-fashion',
