@@ -26,8 +26,8 @@ export const Projects= () => {
             subtitle: 'Real-time Chat Apllication',
             description: " In this Project Used React js,Node js,Express,PostgreSQL,Meterial ui,Tailwind CSS,Context, It's provide Good userfriendly UI, offering a variety of features to enhance your online experience.",
             github: 'https://github.com/Shadialic/Connection',
-            website: 'https://edutap-frontend.vercel.app/',
-            image: Edutap,
+            website: 'https://connections-chat.vercel.app/',
+            image: connections,
             techStack: ['React Js', 'Node Js', 'PostgreSQL', 'Express',"Socket io","Context",'Tailwind CSS']
         },
         {
